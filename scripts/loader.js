@@ -1,7 +1,7 @@
 /**
  * @author igonzalez
  */
-var jewel = {}
+var jewel = {};
 //wait until the doc is loaded
 window.addEventListener("load", function(){
 	//start dynamic loading
@@ -15,7 +15,7 @@ window.addEventListener("load", function(){
 			],
 			//called when all files finished loading and executing
 			complete: function(){
-				console.log("All files loaded!");
+				alert("All files loaded!");
 			}
 			}
 	]);
