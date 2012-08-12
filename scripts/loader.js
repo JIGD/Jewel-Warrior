@@ -15,7 +15,7 @@ window.addEventListener("load", function(){
 			],
 			//called when all files finished loading and executing
 			complete: function(){
-				jewel.game.showScreen;
+				jewel.game.showScreen("splash-screen");
 				alert("All files loaded!");
 			}
 			}
