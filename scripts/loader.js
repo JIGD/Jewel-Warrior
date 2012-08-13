@@ -1,7 +1,9 @@
 /**
  * @author igonzalez
  */
-var jewel = {};
+var jewel = {
+    screens : {}
+};
 //wait until the doc is loaded
 window.addEventListener("load", function(){
 	//start dynamic loading
@@ -11,7 +13,9 @@ window.addEventListener("load", function(){
 			load : [
 			"scripts/sizzle.js",
 			"scripts/dom.js",
-			"scripts/game.js"
+			"scripts/game.js",
+            "scripts/screen.main-menu.js",
+            "scripts/screen.splash.js"
 			],
 			//called when all files finished loading and executing
 			complete: function(){

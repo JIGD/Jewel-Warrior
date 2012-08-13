@@ -7,7 +7,9 @@ jewel.game = (function(){
 		if(activeScreen){
 			dom.removeClass(screen, "active");
 		}
-		dom.addClass(screen, "active");
+        //run screen module
+        jewel.screens[screenId].run();
+        dom.addClass(screen, "active");
 	}
 	//expose public methods
 	return {

@@ -5,12 +5,13 @@
 		<script src="scripts/loader.js"></script>
         <link rel="stylesheet" href="styles/fontfaces.css"/>
 		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no">
 
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<title>Jewel Warriorx</title>
+		<title>Jewel Warrior</title>
 		<link rel="stylesheet" href="styles/main.css"/>
 		<meta name="description" content="" />
 		<meta name="author" content="igonzalez" />
@@ -29,10 +30,17 @@
                 Jewel<br/>
                 Warrior</h1>
                 <br/>
-            <span>Click to continue</span>
+            <span class="continue">Click to continue</span>
             </div>
-			<div class="screen" id="maine-menu"></div>
-			<div class="screen" id="game-screen"></div>
+			<div class="screen" id="main-menu">
+            <ul class="menu">
+            <li><button name="game-screen">Play</button></li>
+            <li><button name="hiscore">Highscore</button></li>
+            <li><button name="about">About</button></li>
+            <li><button name="exit-screen">Exit</button></li>
+            </ul>
+            </div>
+            <div class="screen" id="game-screen"></div>
 			<div class="screen" id="high-scores"></div>
 			</div>
 	</body>
