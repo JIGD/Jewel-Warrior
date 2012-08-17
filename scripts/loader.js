@@ -16,7 +16,7 @@ window.addEventListener("load", function(){
 			load : [
 			"scripts/sizzle.js",
 			"scripts/dom.js",
-			"scripts/game.js",
+			"scripts/game.js"
 			]
         }, {
             test: Modernizr.standalone,
@@ -24,6 +24,7 @@ window.addEventListener("load", function(){
             nope: "scripts/screen.install.js",
            //called when all files finished loading and executing
 			complete: function(){
+                jewel.game.setup();
                 if(Modernizr.standalone){
 				jewel.game.showScreen("splash-screen");
                 }
