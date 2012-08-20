@@ -2,7 +2,13 @@
  * @author igonzalez
  */
 var jewel = {
-    screens : {}
+    screens : {},
+    settings: {
+        rows: 8,
+        cols: 8,
+        baseScore: 100,
+        numJewelTypes: 7
+    }
 };
 //wait until the doc is loaded
 window.addEventListener("load", function(){
@@ -36,7 +42,8 @@ window.addEventListener("load", function(){
 	]);
     if(Modernizr.standalone){
         Modernizr.load([
-            "scripts/screen.main-menu.js"
+            "scripts/screen.main-menu.js",
+            "scripts/board.js"
         ]);
     }
 }, false);
